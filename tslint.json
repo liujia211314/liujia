@@ -8,7 +8,8 @@
       "quotemark": [false],
       "semicolon": [false],
       "interface-name": [true,"never-prefix"],
-      "object-literal-key-quotes": [false]
+      "object-literal-key-quotes": [false],
+      "max-classes-per-file": [false]
     },
     "rulesDirectory": []
 }

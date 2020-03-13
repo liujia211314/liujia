@@ -74,3 +74,33 @@ const childSup = new ChildSup()
 childSup.getParentName()
 // c.getParentType() //error
 ChildSup.getParentTypt1()
+
+
+class Parente1 {
+    constructor(){
+        this.name = 'parente'
+    }
+    print(){
+        console.log(this.name)
+    }
+}
+class Child1 extends Parente1{
+    constructor(){
+        super()
+        this.name = 'child'
+    }
+    childPrint(){
+        super.print()
+    }
+}
+const cr1 = new Child1();
+cr1.childPrint()
+
+//prototype
+//__proto__
+var obj = new Object()
+console.log(obj.__proto__ === Object.prototype)
+// 子类的__proto__指向父类本身
+// 子类的prototype属性的__proto__ 指向父类的prototype
+// 子类的__proto__属性的__proto__ 指向父类的__proto__
+
